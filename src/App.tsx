@@ -1,7 +1,13 @@
+import HabitForm from "./components/HabitForm";
+import HabitList from "./components/HabitList";
+import Header from "./components/Header";
+
 export default function App() {
   return (
-    <div>
-      <h1>Hello, World!</h1>
+    <div className="max-w-2xl mx-auto flex flex-col p-4 gap-4">
+      <Header />
+      <HabitForm />
+      <HabitList />
     </div>
   );
 }

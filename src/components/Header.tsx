@@ -1,0 +1,18 @@
+import Button from "./Button";
+
+export default function Header() {
+    return <header className="flex justify-between items-center">
+      <div className="flex flex-col gap-1">
+        <h1 className="text-3xl font-bold">Habbit Tracker</h1>
+        <span className="text-zinc-400 text-sm">1/1 done</span>
+      </div>
+  
+      <div className="flex flex-col gap-1 items-center">
+        <span className="text-zinc-400 text-sm">Apr 6 - Apr 12</span>
+        <div className="flex items-center gap-3">
+          <Button>Prev</Button>
+          <Button>Next</Button>
+        </div>
+      </div>
+    </header>
+  }
