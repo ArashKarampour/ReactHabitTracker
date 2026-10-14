@@ -1,5 +1,5 @@
 import { isSameDay } from "date-fns";
-import { createContext, useState, type ReactNode, useContext } from "react";
+import { createContext, type ReactNode, useContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export type Habit = { id: number; name: string, completions: Date[] }
