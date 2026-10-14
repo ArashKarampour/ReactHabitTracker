@@ -10,3 +10,6 @@ Initially, the application was created as a personal project to help me stay con
 - Add and delete habits
 - Mark habits as completed for each day
 - View progress over time with a simple calendar view
+- Managing the State of the application using the Storage to persist data across session
+- use of React Context API to manage the state of the application to avoid props drilling and make the state accessible to all components that need it.
+

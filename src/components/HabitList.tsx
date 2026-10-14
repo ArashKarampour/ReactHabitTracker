@@ -38,10 +38,6 @@ type HabitItemProps = {
 function HabitItem({ habit, visibleDates }: HabitItemProps) {
   const { deleteHabit, toggleHabit } = useHabit();
 
-  // const visibleDates = eachDayOfInterval({
-  //     start: startOfWeek(new Date(), { weekStartsOn: 1 }),
-  //     end: endOfWeek(new Date(), { weekStartsOn : 1}) });
-
   const streak: number = getStreak(habit.completions);
 
   return (
