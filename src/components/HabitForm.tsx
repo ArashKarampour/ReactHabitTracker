@@ -1,12 +1,10 @@
 import { useState, type SubmitEvent } from "react";
 import Button from "./Button";
+import { useHabit } from "../context/HabitProvider";
 
-type HabitFormProps = {
-    addHabit: (name: string) => void
-}
-
-export default function HabitForm({ addHabit }: HabitFormProps) {
+export default function HabitForm() {
   const [name, setName] = useState("");
+  const { addHabit } = useHabit();
 
   function handleSubmit(e: SubmitEvent){
     e.preventDefault()
